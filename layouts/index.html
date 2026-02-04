@@ -163,7 +163,7 @@
         </p>
       </div>
 
-      {{ with resources.GetRemote "https://www.youtube.com/feeds/videos.xml?channel_id=UC1J672VqnvOrqZejHlE2F1g" }}
+      {{ with resources.GetRemote "https://www.youtube.com/feeds/videos.xml?channel_id=UC1YO-LzVaMWoVrBgjLH0Kbw" }}
         {{ $feed := .Content | transform.Unmarshal }}
         {{ $video := index ($feed.entry) 0 }}
         {{ $videoId := index (strings.Split $video.id ":") 2 }}
