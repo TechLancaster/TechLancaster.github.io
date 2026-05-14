@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="relative flex flex-col min-h-[calc(100vh-5rem)] px-4 pt-6 pb-24 lg:px-8 bg-white">
+  <a href="{{ .Page.Site.BaseURL }}" class="inline-flex self-start">
+    <span class="sr-only">Tech Lancaster</span>
+    <img class="h-12 w-auto" src="{{ .Page.Site.BaseURL }}/logo.png" alt="">
+  </a>
+
+  <div class="flex grow flex-col gap-12 lg:flex-row lg:items-center lg:justify-center">
+    <div class="relative mt-8 mx-auto lg:mx-0 max-w-85 md:max-w-90">
+      <p class="text-lg md:text-xl font-light">
+        <span class="text-sky-800 font-medium">Tech Lancaster</span> is funded by attendees like you!
+        <span class="custom-underline">Zero corporate sponsors</span> means we can
+        focus on running a great meetup, instead of trying to sell you something.
+      </p>
+      <img src="/floppy-disk.svg" alt=""
+        class="hidden sm:block opacity-10 size-24 absolute -bottom-26 -left-20 lg:-bottom-14 lg:-left-26" />
+      <img src="/gameboy.svg" alt="" class="hidden sm:block opacity-15 size-24 absolute -top-7 -right-20 -rotate-12" />
+    </div>
+
+    <div class="relative flex flex-row justify-center">
+      <div class="min-w-80 sm:min-w-100">
+        <givebutter-giving-form campaign="9LWTPI" />
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

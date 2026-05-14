@@ -1,5 +1,5 @@
 baseURL = 'https://techlancaster.org'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Tech Lancaster'
 
 [params]

@@ -19,3 +19,9 @@
     animation-delay: 3s; /* Set the delay to 3 seconds */
   }
 }
+
+.custom-underline {
+  background: url(/underline.svg) bottom left no-repeat;
+  background-size: 100% 10px;
+  padding-bottom: 7px;
+}

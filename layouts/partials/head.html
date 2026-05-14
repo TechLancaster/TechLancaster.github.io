@@ -2,12 +2,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  {{ $css := resources.Get "css/main.css" }} {{ $style := $css |
-  css.PostCSS }}
+  {{ $css := resources.Get "css/main.css" }} {{ $style := $css | css.PostCSS }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
   {{ $customCSS := resources.Get "css/custom.css" }}
   <link rel="stylesheet" href="{{ $customCSS.Permalink }}" />
+
+  <script async src="https://widgets.givebutter.com/latest.umd.cjs?acct=1BzVigM4BZ4hkeQ0"></script>
 
   <title>{{.Site.Title}}</title>
 </head>
